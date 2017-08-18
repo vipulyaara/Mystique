@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'mystique'
+
+    publishedGroupId = 'xyz.designabc'
+    libraryName = 'Mystique'
+    artifact = 'mystique'
+
+    libraryDescription = 'A library to help implementing complex animations and transitions'
+
+    siteUrl = 'https://github.com/vipulyaara/Mystique'
+    gitUrl = 'https://github.com/vipulyaara/Mystique.git'
+
+    libraryVersion = '0.0.1'
+
+    developerId = 'vipulyaara'
+    developerName = 'Vipul Kumar'
+    developerEmail = 'vipulyaara@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+}
