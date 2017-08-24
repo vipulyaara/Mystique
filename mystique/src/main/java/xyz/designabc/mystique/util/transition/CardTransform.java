@@ -46,7 +46,7 @@ import android.view.animation.Interpolator;
 import java.util.ArrayList;
 import java.util.List;
 
-import xyz.designabc.newsacademy.R;
+import xyz.designabc.mystique.R;
 
 import static android.view.View.MeasureSpec.makeMeasureSpec;
 

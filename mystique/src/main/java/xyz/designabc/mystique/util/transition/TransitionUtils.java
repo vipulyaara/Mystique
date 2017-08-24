@@ -10,8 +10,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewCompat;
 import android.view.View;
 
-import xyz.designabc.newsacademy.R;
-import xyz.designabc.newsacademy.util.DeviceUtil;
+import xyz.designabc.mystique.R;
 
 /**
  * Authored by vipulkumar on 22/06/17.
